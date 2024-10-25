@@ -1,0 +1,12 @@
+
+.container img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container img {
+    width: 100%; /* Ajuste a largura desejada */
+    height: 100%; /* Ajuste a altura desejada */
+    object-fit: cover; /* Para manter a proporção */
+    margin: 5px;
+}

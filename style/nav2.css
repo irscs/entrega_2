@@ -1,0 +1,19 @@
+.container img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container img {
+    width: 100%; /* Ajuste a largura desejada */
+    height: 100%; /* Ajuste a altura desejada */
+    object-fit: cover; /* Para manter a proporção */
+    margin: 5px;
+}
+
+body { font-family: Arial, sans-serif; }
+        .form-container { max-width: 400px; margin: auto; }
+        input, textarea { width: 100%; margin-bottom: 10px; padding: 10px; }
+        button { padding: 10px; background-color: #089cbd; 
+        color: rgb(6, 140, 197); border: none; cursor: pointer; }
+        button:hover { background-color: #05879e; 
+}
