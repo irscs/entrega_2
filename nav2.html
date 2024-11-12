@@ -3,6 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> BLOG_SW.BR </title>
+    <!-- Incluindo o Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Incluindo o CSS personalizado -->
+    <style>
+        /* Animação do botão */
+        .btn-animate {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+        
+        .btn-animate::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: all 0.4s ease;
+            transform: translate(-50%, -50%) scale(0);
+            border-radius: 50%;
+        }
+        
+        .btn-animate:hover::before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        
+        .btn-animate:hover {
+            color: white;
+            background-color: #007bff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Botão animado com link para o YouTube -->
+<div class="container text-center mt-5">
+    <a href="  https://youtu.be/bD7bpG-zDJQ  " 
+       class="btn btn-primary btn-lg btn-animate" target="_blank" id="trailerButton">
+        Assistir ao trailer do filme
+    </a>
+</div>
+
+<!-- Incluindo o Bootstrap JS e jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
     <title> BLOG_SW.BR </title>
     <link rel="stylesheet" href="./style/nav2.css">
     <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
